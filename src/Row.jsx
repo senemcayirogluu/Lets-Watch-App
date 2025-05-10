@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import axios from './axios'
 import './Row.css'
 
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl, isLargeRow }) {
     const [movies, setMovies] = React.useState([]);
 
     useEffect(() => {
@@ -14,8 +14,6 @@ function Row({ title, fetchUrl }) {
         fetchData();
     }, [fetchUrl]);
 
-    console.table(movies);
-
     return (
         <div className="row">
             <h2>{title}</h2>
@@ -23,8 +21,8 @@ function Row({ title, fetchUrl }) {
                 {movies?.map((movie) => (
                     <img
                         key={movie.id}
-                        className="poster"
-                        src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
+                        className={`poster ${isLargeRow && "posterLarge"}`}
+                        src={`https://image.tmdb.org/t/p/original/${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
                         alt={movie.name}
                     />
                 ))}

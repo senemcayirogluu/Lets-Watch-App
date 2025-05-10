@@ -1,3 +1,10 @@
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    color: lavender;
+}
+
 .posters {
     display: flex;
     overflow-y: hidden;
@@ -19,6 +26,15 @@
 }
 
 .poster:hover {
+    transform: scale(1.15);
+    /* opacity: 1; */
+}
+
+.posterLarge {
+    max-height: 250px;
+}
+
+.posterLarge:hover {
     transform: scale(1.15);
     /* opacity: 1; */
 }
