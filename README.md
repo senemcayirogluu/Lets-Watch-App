@@ -1,12 +1,44 @@
-# React + Vite
+# Lets Watch App Project | Dizi-Film Sitesi Projesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## English Version
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Project Overview  
+It is a website project that lists movie and series content and provides access to videos of these contents.  
+A large banner was created at the top.  
+Category headings were determined. Movie and series images were arranged in rows beneath these headings.  
+When users clicked on images of series or movies on the site, the trailer for that content was automatically played. This process was accomplished by dynamically retrieving the trailer's YouTube link using the movie-trailer module. The resulting video link was played through the react-youtube.  
+This allows users to directly watch the trailer for the relevant content when they click on images of series or movies.  
 
-## Expanding the ESLint configuration
+### Technologies Used  
+- HTML  
+- CSS  
+- JavaScript  
+- React  
+- axios  
+- react-youtube  
+- movie-trailer  
+- TMDB API  
+- Postman  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Türkçe Versiyon
+
+### Proje Özeti  
+Film-dizi içeriklerini listeleyen ve bu içeriklerin videolarına ulaşım sağlayan web sitesi projesidir.  
+En yukarıya büyük bir afiş oluşturuldu.  
+Kategori başlıkları belirlendi. Bu başlıkların altına film-dizi görselleri satırlarda sıralandı.  
+Kullanıcılar site üzerinde yer alan dizi veya film görsellerine tıkladıklarında, o içeriğe ait fragman otomatik olarak oynatıldı. Bu işlem movie-trailer modülü ile fragmanın YouTube'daki bağlantısı dinamik olarak alınarak gerçekleştirildi. Elde edilen video linki react-youtube bileşeni üzerinden oynatıldı.  
+Bu sayede kullanıcılar, dizi ya da film görsellerine tıkladıklarında ilgili içeriğin fragmanını doğrudan izleyebiliyorlar.  
+
+### Kullanılan Teknolojiler  
+- HTML  
+- CSS  
+- JavaScript  
+- React  
+- axios  
+- react-youtube  
+- movie-trailer  
+- TMDB API  
+- Postman  
+
